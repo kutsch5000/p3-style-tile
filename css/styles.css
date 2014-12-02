@@ -1,35 +1,84 @@
 body{
 	background-color: black;
 }
+
+li{
+	list-style-type: none;
+}
 img{
-	float: left;
 	position: fixed;
 	z-index: -1;
-	top: 0;
+	top: 50px;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+
+em{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+p{
+	font-weight: 300;
+}
+
+h2, h3{
+	font-weight: 700;
 }
 /* Set Your Own Margin & Padding */
 h2, h3, p {
 	color: white;
 	margin: 0;
+	font-family: 'Lato', sans-serif;
 }
 
-/* Layout for Style Tile*/
-section {
-	margin: 20px 0;
+.thumbnail{
+	width: 1000px;
+	height: 600px;
+	overflow: hidden;
+ 	position: relative;
+}
+
+.thumbnail section{
+  position: absolute;
+  bottom: -600px;
+  transition: bottom 1s;
+}
+
+.thumbnail:hover section{
+	position: absolute;
+	bottom: 0px;
 }
 
 .color-1,
 .color-2,
-.color-3,
-.pattern-1,
-.pattern-2,
-.pattern-3 {
-	border: 1px solid #000;
+.color-3{
+	border: 1px solid white;
 	float: left;
 	margin: 0 10px;
 	height: 50px;
 	width: 50px;
 }
+
+.color-1{
+	background-color: red;
+}
+
+.color-2{
+	background-color: black;
+}
+
+.color-3{
+	background-color: white;
+}
+
+
 
 
 /* Show Grid */
