@@ -4,7 +4,9 @@ body{
 
 li{
 	list-style-type: none;
+
 }
+
 img{
 	position: fixed;
 	z-index: -1;
@@ -38,6 +40,13 @@ h2, h3, p {
 	font-family: 'Lato', sans-serif;
 }
 
+a{
+	color: white;
+}
+
+a:hover{
+	background-color: gray;
+}
 .thumbnail{
 	width: 1000px;
 	height: 600px;
